@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+:root {
+  --mainColor: #fef3e8;
+  --cardColor: #a01c55;
+}
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  background-color: var(--mainColor);
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+#main-section {
+  margin-bottom: 150px;
+}
+.main-section-inner {
+  margin-bottom: 50px;
+}
+.main-logo {
+  background-image: url("../images/main_log.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 450px;
+}
+
+.out-space {
+  margin-top: 50px;
+}
+.card-box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #555d6d;
+}
+
+.title-head {
+  margin-bottom: 13px;
+  font-weight: bold;
+}
+.sm-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--cardColor);
+  box-shadow: 10px 10px 30px -5px black;
+  margin-right: 2px;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.sm-card:hover {
+  transform: scale(1.2);
+  background-color: lightseagreen;
+}
+.sm-card-inner {
+  padding: 1px;
+}
+
+.md-card {
+  width: 250px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--cardColor);
+  box-shadow: 10px 10px 30px -5px black;
+  margin-right: 2px;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.md-card:hover {
+  transform: scale(1.2);
+  background-color: lightseagreen;
+}
+.md-card-inner {
+  padding: 1px;
+  margin-bottom: 10px;
+}
+.emoji {
+  width: 60px;
+  height: 70px;
+  margin-bottom: 5px;
+}
+.font-lg {
+  font-size: large;
+}
+.font-sm {
+  font-size: small;
+  opacity: 0.8;
+}
+
+.search-box {
+  width: 90%;
+  height: 50px;
+  border-radius: 20px;
+  padding: 20px;
+  transition: color 2s ease-in-out;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+#icon-color {
+  position: relative;
+  top: 5px;
+  left: -50px;
+  color: black;
+}
+
+#icon-color:hover {
+  color: var(--cardColor);
+  border: var(--cardColor);
+}
+
+/* #search-category{
+  background-color: white;
+  width: 300%;
+} */
+.search-category-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-category-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 180px;
+  background-color: white;
+  margin: 60px;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 10px 10px 30px -5px navajowhite;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.search-category-items:hover {
+  transform: scale(1.2);
+  background-color: sandybrown;
+  border-radius: 50%;
+}
+.modal-header-custom {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.modal-exit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-title-custom {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.modal-login-box {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.login-input {
+  width: 45%;
+}
+.modal-footer-custom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-btn {
+  position: relative;
+  background-color: rgba(22, 160, 133, 1);
+  font-weight: bold;
+  width: 150px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 2px 2px black;
+  margin-bottom: 10px;
+}
+.login-arrow {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+.login-sm {
+  font-size: small;
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
+
+/*menu-toggle-modal 부분 커스텀
+ 메뉴 토글 클릭시 우측에서 모달 출력되도록 설정*/
+.custom-modal-dialog {
+  position: absolute;
+  left: auto;
+  right: 0;
+  height: 100%;
+  top: -30px;
+  bottom: 0;
+  width: 20%;
+}
+.custom-modal-content {
+  border: none;
+  border-radius: 0px;
+  height: 100%;
+}
+.menu-toggle-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.menu-toggle-footer-items {
+  margin: 2px 2px;
+  padding: 10px;
+}
+.insta-logo {
+  size: 20px;
+}
+button:focus {
+  box-shadow: none !important;
+}
+
+/* 스플래쉬 이미지 효과 부분*/
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+#splash-screen {
+  background-color: var(--cardColor);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.8s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.splash-logo {
+  background-image: url("../images/splash-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: spin 0.8s ease-in-out;
+}

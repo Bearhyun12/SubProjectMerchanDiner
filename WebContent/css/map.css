@@ -1,0 +1,183 @@
+*::-webkit-scrollbar {
+  display: none;
+}
+.shadow {
+  transition: all 0.2s;
+  box-shadow: 3px 3px 8px rgb(0 0 0 / 20%);
+}
+.map-section {
+  position: relative;
+}
+.map-nav {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 500;
+  height: 8%;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.nav-item-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.wide-button {
+  width: 25%;
+}
+.btn-bg-color {
+  background-color: #0581bb;
+  border: none;
+  padding: 10px;
+}
+.btn-bg-color:hover,
+.btn-bg-color:focus {
+  background-color: #0575a9;
+}
+#menu-wrap {
+  z-index: 600;
+  position: absolute;
+  width: 320px;
+  height: 300px;
+  top: 0;
+  right: 150px;
+  bottom: 0;
+  margin: 0px 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 5px 0px;
+  height: 100%;
+}
+.list-panel {
+  padding: 0px 15px;
+}
+#placeList {
+  padding-bottom: 80px;
+}
+.list-item {
+  margin: 10px;
+}
+.list-overlay {
+  word-break: keep-all;
+  text-align: left;
+  padding: 15px 20px;
+  min-width: 100px;
+  position: relative;
+  line-height: 1.9;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: white;
+}
+.list-overlay:hover {
+  background-color: tomato;
+  color: white;
+}
+.read-more {
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  padding: 4px 11px;
+  border-radius: 10px;
+}
+
+.place-name {
+  color: #0581bb;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.place-address {
+  font-size: 11px;
+  color: #adadad;
+  margin-bottom: 8px;
+}
+.theme-name {
+  color: #545454;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.65;
+  margin: 4px 0 0px;
+}
+/*호버 기능을 위한 이너박스 추가 CSS*/
+.inner-box {
+  background-color: tomato;
+  color: white;
+}
+.map-modal-index {
+  z-index: 9999;
+}
+.btn-custom-radius {
+  border-radius: 11px 0px 0px 11px;
+}
+.menu-footer {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  z-index: 500;
+  font-size: 15px;
+  color: #0581bb;
+  font-weight: 500;
+  width: 300px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+/* .wrapper {
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 100px;
+    height: 100%;
+  }
+  .float-button {
+    display: inline-block;
+    padding: 16px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+  } */
+.menu-footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: #0581bb;
+  border-radius: 110px;
+  color: white;
+}
+.menu-footer-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0581bb;
+  padding: 10px;
+  height: 100%;
+  font-weight: 500;
+  text-align: center;
+}
+.menu-footer-text-inner {
+  font-weight: bold;
+}
+.menu-footer-iconbox {
+  display: block;
+  width: 30%;
+  height: 100%;
+}
+.menu-footer-iconbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.menu-footer-iconbox:hover {
+  transform: rotateZ(360deg);
+}
+
+.list-overlay:hover .place-name {
+  color: white;
+}
